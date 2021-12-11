@@ -6,6 +6,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   animation: fadein 0.5s;
   height: fit-content;
+
 }
 
 h1 {
@@ -138,8 +139,8 @@ a {
   }
 
   .card:hover {
-    -ms-transform: scale(1.01); /* IE 9 */
-    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    -ms-transform: scale(1.01); 
+    -webkit-transform: scale(1.01); 
     transform: scale(1.01); 
   }
   
@@ -162,7 +163,7 @@ a {
   
 }
 
-  @media (prefers-color-scheme: light) {
+  @media (not (prefers-color-scheme: dark)) {
   body {
     background-color: #CFD8E1;
     color: #1F2933;
@@ -185,13 +186,12 @@ a {
   }
 
   a {
-    /*//# color: #5e81ac; ///*/
     color: #1F2933;
     text-decoration: underline;
   }
 
   .card a {
-    color: #5e81ac; /*//#5e81ac;//*/
+    color: #5e81ac; 
     text-decoration: none;
   }
 
@@ -205,8 +205,8 @@ a {
   }
 
   .card:hover {
-    -ms-transform: scale(1.01); /* IE 9 */
-    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    -ms-transform: scale(1.01); 
+    -webkit-transform: scale(1.01); 
     transform: scale(1.01); 
   }
 
@@ -215,3 +215,4 @@ a {
     color: #444;
   }
 }  
+
