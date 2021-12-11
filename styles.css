@@ -95,11 +95,11 @@ a {
 #experience-row > li:before {
   content: "";
   width: 2px;
-  background-color: black;
+  background-color: #5e81ac;
   position: absolute;
   top: 10px;
   bottom: -3px;
-  left: 5px;
+  left: 6.5px;
 }
 
 #experience-row > li.tail::before {
@@ -209,6 +209,7 @@ a {
     -webkit-transform: scale(1.01); 
     transform: scale(1.01); 
   }
+
 
   .tag {
     border: 1px solid #444;
