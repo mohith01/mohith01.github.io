@@ -17,8 +17,8 @@ p {
 }
 
 a {
-  color: rgb(35, 103, 230);
-  text-decoration: none;
+  color: #1F2933;
+  text-decoration: underline;
 }
 
 @keyframes fadein {
@@ -58,14 +58,14 @@ a {
 }
 
 .card a {
-  color: rgb(94, 149, 252);
+  color: #1F2933;
   text-decoration: none;
 }
 
 .tag {
   border: 1px solid #5f6368;
   border-radius: 10%;
-  color: white;
+  color: black;
   background: none;
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
@@ -94,7 +94,7 @@ a {
 #experience-row > li:before {
   content: "";
   width: 2px;
-  background-color: white;
+  background-color: black;
   position: absolute;
   top: 10px;
   bottom: -3px;
@@ -119,35 +119,80 @@ a {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #113;
-    color: white;
+    background-color: #1f2933;
+    color: #9EB1C4;
   }
 
   hr {
     border: 1px solid #5f6368;
   }
-}
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: beige;
-    color: #111;
+  a {
+    color: #9EB1C4;
+    text-decoration: underline;
   }
 
+  .card a {
+    color: #6E8AA6;
+    text-decoration: none;
+  }
+
+  .card:hover {
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.01); 
+  }
+  
   circle {
-    stroke: #333;
+    stroke: #6E8AA6;
   }
 
   circle.inner {
-    fill: #333;
+    fill: #6E8AA6;
   }
 
   circle.tail {
-    fill: #333;
+    fill: #6E8AA6;
+  }
+
+  .tag {
+    border: 1px solid #6E8AA6;
+    color: #6E8AA6;
+  }
+  
+}
+
+  @media (prefers-color-scheme: light) {
+  body {
+    background-color: #CFD8E1;
+    color: #1F2933;
+  }
+
+  circle {
+    stroke: #1F2933;
+  }
+
+  circle.inner {
+    fill: #1F2933;
+  }
+
+  circle.tail {
+    fill: #1F2933;
   }
 
   hr {
     border: 0.5px solid #555;
+  }
+
+  a {
+    /*//# color: #5e81ac; ///*/
+    color: #1F2933;
+    text-decoration: underline;
+  }
+
+  .card a {
+    color: #5e81ac; /*//#5e81ac;//*/
+    text-decoration: none;
   }
 
   #experience-row > li:before {
@@ -155,12 +200,18 @@ a {
   }
 
   .card {
-    border: 1px solid #444;
-    box-shadow: 3px 3px 0px 1px rgb(0, 0, 0, 0.3);
+    border: 1px solid #5e81ac;
+    box-shadow: 3px 3px 0px 1px rgb(94, 129, 172, 0.3);
+  }
+
+  .card:hover {
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.01); 
   }
 
   .tag {
     border: 1px solid #444;
     color: #444;
   }
-}
+}  
