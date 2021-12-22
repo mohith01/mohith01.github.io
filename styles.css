@@ -118,6 +118,58 @@ a {
     margin-left: 2em;
 }
 
+body {
+  background-color: #CFD8E1;
+  color: #1F2933;
+}
+
+circle {
+  stroke: #1F2933;
+}
+
+circle.inner {
+  fill: #1F2933;
+}
+
+circle.tail {
+  fill: #1F2933;
+}
+
+hr {
+  border: 0.5px solid #555;
+}
+
+a {
+  color: #1F2933;
+  text-decoration: underline;
+}
+
+.card a {
+  color: #5e81ac; 
+  text-decoration: none;
+}
+
+#experience-row > li:before {
+  background-color: #333;
+}
+
+.card {
+  border: 1px solid #5e81ac;
+  box-shadow: 3px 3px 0px 1px rgb(94, 129, 172, 0.3);
+}
+
+.card:hover {
+  -ms-transform: scale(1.01); 
+  -webkit-transform: scale(1.01); 
+  transform: scale(1.01); 
+}
+
+
+.tag {
+  border: 1px solid #444;
+  color: #444;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #1f2933;
